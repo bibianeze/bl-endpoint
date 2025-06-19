@@ -187,3 +187,23 @@ module.exports = {register, login}
 // 237. inside the package.json, we want to make sure we have the proper 'start' scrpt and not just the dev script. that is what the cloud version will use to start our project
 // 238. we will head over to github and create a new repository
 // 239. follow the steps to push this to github
+// 240. once that is done, we will see when we refresh that the repo has been created
+// 241. HOSTING ON A HOSTING PLATFORM: this is similar to how you host your fronend project on vercel. There are different platforms we can use to host on the backend too. we have render.com, lets go there and set it up, 
+// a. click on get started for free and sign up with github
+// b. in our dashboard, click new and choose web services
+// c. it will ask you to connect a repository
+// d. pick the first code we just pushed to git
+// e. do the set up, provide a name
+// f. choose free
+// g. for our projects to work, we will need to access the environmental file that we did not pushed to github
+// h. we must cater for those environmental variales. click on advanced and you will see add environmental variables, then go to code and copy the environmental variables
+// i. then click deploy
+// j. we might get failed if we try to deploy and it could be because of the version of node, so we need to cater for that
+// k. in the documentation we will see how we can fix it. there are various ways we can set it up, either creating an environmental variable or we can set it up in our package.json
+// l. we can add to our package.json
+// "engines": {
+//   "node": ">=14 <15"
+// }
+// m. now we have made changes to the code, we want to push to github
+// i. git add .
+// ii. git commit

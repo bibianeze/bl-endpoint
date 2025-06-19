@@ -63,7 +63,9 @@ app.use("/api/v1/blog", auth, blogRouter)
 
 // 115. now we wamt to actually do the crud when we are logged in. that is the architecture when we are logged in
 // 116. set up blog model. so create a file called blog js in models folder, lets move over there
-
+app.get("/",(req,res)=>{
+    res.status(200).json({success:true,message:"server is live"});
+})
 
 // 181. we want to set up the error route here
 app.use(notfound)

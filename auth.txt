@@ -1,0 +1,52 @@
+Authentication is the process of verifying the identity of a user or information
+for example, you want to access your instagram account you have to provide a username and password that is correct
+What is Authentication?
+Authentication is the process of verifying who a user is.
+
+It answers the question:
+➡️ “Are you really who you say you are?”
+
+Example: When you log into Facebook with your email and password, Facebook checks if you're a registered user and if your password is correct. If yes — you're authenticated.
+
+we have many ways in which an app can be authenticated. lets look at each one by one:
+1. cookie-based Authentication
+2. token-based Authentication
+3. third-party access (OAuth)
+
+
+token-based Authentication: when a user tries to register in a website, they check if the credentials provided match, and if it does, they generate a token for the user that will be used to check if other things 
+token-based authentication is a method where the server issues a token (usually a JWT) to the user after successful login. This token is then used to verify the user's identity for each request to protected routes — without storing session info on the server.
+ Common Tool: JWT (JSON Web Token)
+A JWT is a compact, encoded token that contains user information and is signed using a secret key.
+
+A typical JWT looks like this:
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+eyJpZCI6IjEyMzQiLCJlbWFpbCI6InVzZXJAZ21haWwuY29tIn0.
+F1dZbNz4TYoKXENdNlCy0p1cI5qpvn6A1r3qL9Lhwl4
+It has 3 parts:
+
+Header: Info about the token (e.g., algorithm used)
+
+Payload: Actual data (e.g., user id, role)
+
+Signature: To verify that the token wasn’t tampered with
+
+
+Now to the practical method: 
+
+we want to create a blog post and be able to do some crud, but before that we want to log in
+and if we are not logged in we wont be able to do these things.
+1. we want to create models and controllers that alows users register on our platform and also log in and perform some things, they will not be able to log in if the credentials are wrong
+so a user has to be logged in first before they can perform the crud we will set up
+
+
+setting up
+2 . set up the file and get it running.
+a. npm init, and set up the package.json 
+b. install mongoose, express and nodemon
+c. set up your scripts
+
+3. set up dotenv
+4. move over to index

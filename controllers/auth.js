@@ -206,4 +206,7 @@ module.exports = {register, login}
 // }
 // m. now we have made changes to the code, we want to push to github
 // i. git add .
-// ii. git commit
+// ii. git commit -m "made changes to package.json"
+// iii. git push
+// n. go back to github. and refresh the repo, we will see that its been added
+// o. our web service will automatically pick up those changes
